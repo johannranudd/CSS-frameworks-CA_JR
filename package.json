@@ -7,7 +7,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
     "url": "https://github.com/johannranudd/CSS-frameworks-CA_JR/issues"
   },
   "homepage": "https://github.com/johannranudd/CSS-frameworks-CA_JR#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.54.5"
+  }
 }
