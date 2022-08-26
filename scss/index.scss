@@ -6,6 +6,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.sidebar-wrapper {
+  display: flex;
+}
 .sidebar {
   display: none;
   @media (min-width: 540px) {
@@ -40,6 +43,24 @@ a {
 }
 
 // test-container
-.test-container {
+.posts-container {
+  width: 100%;
+  margin-left: auto;
+  height: 500px;
   background: red;
+  @media (min-width: 540px) {
+    width: 78%;
+  }
+  @media (min-width: 768px) {
+    width: 83.5%;
+  }
+  @media (min-width: 992px) {
+    width: 87.7%;
+  }
+  @media (min-width: 1200px) {
+    width: 89.5%;
+  }
+  @media (min-width: 1298px) {
+    width: 73.7%;
+  }
 }
