@@ -10976,32 +10976,6 @@ a {
 
 .posts-container {
   width: 100%;
-  margin-left: auto;
   height: 500px;
   background: red;
-}
-@media (min-width: 540px) {
-  .posts-container {
-    width: 78%;
-  }
-}
-@media (min-width: 768px) {
-  .posts-container {
-    width: 83.5%;
-  }
-}
-@media (min-width: 992px) {
-  .posts-container {
-    width: 87.7%;
-  }
-}
-@media (min-width: 1200px) {
-  .posts-container {
-    width: 89.5%;
-  }
-}
-@media (min-width: 1298px) {
-  .posts-container {
-    width: 73.7%;
-  }
 }/*# sourceMappingURL=index.css.map */
