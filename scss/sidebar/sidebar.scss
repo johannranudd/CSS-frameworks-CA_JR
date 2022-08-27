@@ -1,4 +1,4 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 .sidebar-wrapper {
   display: flex;
@@ -34,9 +34,18 @@
       width: 18rem;
       align-items: flex-start;
     }
+  }
+}
 
-    // mobilebar
-    // mobilebar
-    // mobilebar
+// mobilebar
+// mobilebar
+// mobilebar
+.mobilebar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: red;
+  @media (min-width: 540px) {
+    display: none;
   }
 }

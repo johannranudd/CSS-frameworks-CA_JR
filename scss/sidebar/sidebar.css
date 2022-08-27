@@ -10925,12 +10925,11 @@ textarea.form-control-lg {
 .sidebar-wrapper {
   display: flex;
 }
-
-.sidebar {
+.sidebar-wrapper .sidebar {
   display: none;
 }
 @media (min-width: 540px) {
-  .sidebar {
+  .sidebar-wrapper .sidebar {
     position: fixed;
     width: 7rem;
     height: 100vh;
@@ -10941,26 +10940,38 @@ textarea.form-control-lg {
     color: white;
     padding: 1rem;
   }
-  .sidebar .logo {
+  .sidebar-wrapper .sidebar .logo {
     background: transparent;
     color: inherit;
     padding: 0;
   }
-  .sidebar .list-item {
+  .sidebar-wrapper .sidebar .list-item {
     margin: 2rem 0;
   }
-  .sidebar .list-item p {
+  .sidebar-wrapper .sidebar .list-item p {
     display: none;
   }
 }
 @media (min-width: 540px) and (min-width: 1298px) {
-  .sidebar .list-item p {
+  .sidebar-wrapper .sidebar .list-item p {
     display: inline;
   }
 }
 @media (min-width: 1298px) {
-  .sidebar {
+  .sidebar-wrapper .sidebar {
     width: 18rem;
     align-items: flex-start;
+  }
+}
+
+.mobilebar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: red;
+}
+@media (min-width: 540px) {
+  .mobilebar {
+    display: none;
   }
 }/*# sourceMappingURL=sidebar.css.map */
