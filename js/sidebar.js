@@ -23,9 +23,12 @@ imgInput.addEventListener('change', (e) => {
   reader.onload = function () {
     const img = new Image();
     img.src = reader.result;
-    imgDisplayer.appendChild(img);
+    imgDisplayer.style.backgroundImage = `url(${img.src})`;
+    console.log(img.width);
   };
   reader.readAsDataURL(imgInput.files[0]);
+  imgDisplayer.style.height = '300px';
+  imgDisplayer.style.width = '300px';
 });
 
 //

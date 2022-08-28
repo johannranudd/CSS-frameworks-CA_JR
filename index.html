@@ -90,13 +90,16 @@
                   contenteditable
                 ></span>
               </p>
-              <button class="btn btn-primary post-btn">Submit</button>
-              <!-- <button class="image-btn">image</button> -->
-              <input
-                type="file"
-                id="image-input"
-                accept="image/png, image/jpg"
-              />
+              <div
+                class="d-flex flex-column align-items-start post-btns-component"
+              >
+                <input
+                  type="file"
+                  id="image-input"
+                  accept="image/png, image/jpg, image/WEBP"
+                />
+                <button class="btn btn-primary post-btn">Submit</button>
+              </div>
               <div class="image-displayer"></div>
             </div>
           </form>

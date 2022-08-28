@@ -31,10 +31,16 @@
         line-height: 20px;
         max-width: 500px;
       }
+      .post-btns-component {
+        // max-width: 500px;
+      }
+      #image-input {
+        // padding: 20rem;
+      }
       .image-displayer {
-        height: 300px;
-        width: 300px;
-        border: 1px solid black;
+        background: no-repeat;
+        background-position: center center;
+        background-size: cover;
       }
     }
   }
