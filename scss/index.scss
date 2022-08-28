@@ -12,12 +12,61 @@
   .home-component {
   }
   form {
-    // image tag here
+    display: flex;
+    .profile-image {
+      border-radius: 50%;
+      object-fit: cover;
+      width: 70px;
+      height: 70px;
+    }
     .form-floating {
-      .textarea-for-posting {
+      margin-top: 1rem;
+      width: 100%;
+      .textarea {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        resize: both;
+        min-height: 40px;
+        line-height: 20px;
+        max-width: 500px;
+      }
+      .image-displayer {
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
       }
     }
   }
+
+  //   *old
+  //   form {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     @media (min-width: 540px) {
+  //       flex-direction: row;
+  //       align-items: start;
+  //     }
+  //     .profile-image {
+  //       border-radius: 50%;
+  //       object-fit: cover;
+  //       width: 70px;
+  //       height: 70px;
+  //     }
+  //     .form-floating {
+  //       display: flex;
+  //       flex-direction: column;
+  //       align-items: center;
+  //       width: 100%;
+  //       .textarea-for-posting {
+  //         min-height: 5rem;
+  //       }
+  //       .post-btn {
+  //         // float: right;
+  //       }
+  //     }
+  //   }
 }
 
 // .mobileThingIMadeUp {

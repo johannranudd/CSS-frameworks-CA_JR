@@ -70,16 +70,35 @@
             <h4>Home</h4>
           </div>
           <form>
-            <!-- !<img src="" alt="" class=""> -->
+            <img
+              src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png"
+              alt="profile image"
+              class="img-fluid profile-image"
+            />
             <div class="form-floating">
-              <textarea
+              <!-- <textarea
                 class="form-control textarea-for-posting"
                 placeholder="Leave a comment here"
                 id="floatingTextarea"
               ></textarea>
-              <label for="floatingTextarea">Post something</label>
+              <label for="floatingTextarea">Post something</label> -->
+              <p>
+                <span
+                  class="textarea"
+                  role="textbox"
+                  placeholder="Post something"
+                  contenteditable
+                ></span>
+              </p>
+              <button class="btn btn-primary post-btn">Submit</button>
+              <!-- <button class="image-btn">image</button> -->
+              <input
+                type="file"
+                id="image-input"
+                accept="image/png, image/jpg"
+              />
+              <div class="image-displayer"></div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
         <!-- icons and add image icons etc-->
