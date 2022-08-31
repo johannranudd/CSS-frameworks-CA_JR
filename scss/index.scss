@@ -5,6 +5,8 @@
   height: 500px;
   .post-container {
     background: #def;
+    padding: 1rem;
+    overflow: hidden;
   }
   .feed-container {
     background: #fed;
@@ -13,15 +15,11 @@
   }
   form {
     display: flex;
-    .profile-image {
-      border-radius: 50%;
-      object-fit: cover;
-      width: 70px;
-      height: 70px;
-    }
+
     .form-floating {
       margin-top: 1rem;
       width: 100%;
+      margin-left: 1rem;
       .textarea {
         display: block;
         width: 100%;
@@ -32,11 +30,15 @@
         max-width: 500px;
       }
       .post-btns-component {
-        // max-width: 500px;
+        #image-input {
+          font-size: 12px;
+          margin-bottom: 1rem;
+        }
+        .post-btn {
+          // margin-bottom: 1rem;
+        }
       }
-      #image-input {
-        // padding: 20rem;
-      }
+
       .image-displayer {
         background: no-repeat;
         background-position: center center;
@@ -44,59 +46,23 @@
       }
     }
   }
-
-  //   *old
-  //   form {
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     @media (min-width: 540px) {
-  //       flex-direction: row;
-  //       align-items: start;
-  //     }
-  //     .profile-image {
-  //       border-radius: 50%;
-  //       object-fit: cover;
-  //       width: 70px;
-  //       height: 70px;
-  //     }
-  //     .form-floating {
-  //       display: flex;
-  //       flex-direction: column;
-  //       align-items: center;
-  //       width: 100%;
-  //       .textarea-for-posting {
-  //         min-height: 5rem;
-  //       }
-  //       .post-btn {
-  //         // float: right;
-  //       }
-  //     }
-  //   }
 }
 
-// .mobileThingIMadeUp {
-//   background-color: red;
-// }
-
-// .posts-container {
-//   width: 100%;
-//   margin-left: auto;
-//   height: 500px;
-//   background: red;
-//   @media (min-width: 540px) {
-//     width: 78%;
-//   }
-//   @media (min-width: 768px) {
-//     width: 83.5%;
-//   }
-//   @media (min-width: 992px) {
-//     width: 87.7%;
-//   }
-//   @media (min-width: 1200px) {
-//     width: 89.5%;
-//   }
-//   @media (min-width: 1298px) {
-//     width: 73.7%;
-//   }
-// }
+.feed-container {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  .feed-card {
+    .posted-content {
+      .name-and-text-container {
+        margin-left: 1rem;
+      }
+    }
+    .posted-image-container {
+      img {
+        width: 70%;
+        // max-width: 400px;
+        margin-left: 86px;
+      }
+    }
+  }
+}

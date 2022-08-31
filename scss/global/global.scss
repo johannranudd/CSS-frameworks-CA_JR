@@ -1,8 +1,17 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 body {
   position: relative;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.profile-image {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
 }

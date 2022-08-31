@@ -10924,9 +10924,19 @@ textarea.form-control-lg {
 }
 body {
   position: relative;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.profile-image {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 70px;
+  height: 70px;
 }/*# sourceMappingURL=global.css.map */

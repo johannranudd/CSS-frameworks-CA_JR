@@ -10928,6 +10928,8 @@ textarea.form-control-lg {
 }
 .posts-container .post-container {
   background: #def;
+  padding: 1rem;
+  overflow: hidden;
 }
 .posts-container .feed-container {
   background: #fed;
@@ -10935,16 +10937,10 @@ textarea.form-control-lg {
 .posts-container form {
   display: flex;
 }
-.posts-container form .profile-image {
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 70px;
-  height: 70px;
-}
 .posts-container form .form-floating {
   margin-top: 1rem;
   width: 100%;
+  margin-left: 1rem;
 }
 .posts-container form .form-floating .textarea {
   display: block;
@@ -10955,8 +10951,24 @@ textarea.form-control-lg {
   line-height: 20px;
   max-width: 500px;
 }
+.posts-container form .form-floating .post-btns-component #image-input {
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
 .posts-container form .form-floating .image-displayer {
   background: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.feed-container {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.feed-container .feed-card .posted-content .name-and-text-container {
+  margin-left: 1rem;
+}
+.feed-container .feed-card .posted-image-container img {
+  width: 70%;
+  margin-left: 86px;
 }/*# sourceMappingURL=index.css.map */
