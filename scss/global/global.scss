@@ -28,9 +28,7 @@ ul {
 }
 
 .form-floating {
-  margin-top: 1rem;
   width: 100%;
-  margin-left: 1rem;
   .textarea {
     display: block;
     width: 90%;
@@ -38,16 +36,11 @@ ul {
     resize: both;
     min-height: 40px;
     line-height: 20px;
-    border-bottom: 1px solid black;
-    padding: 1rem;
+    border-bottom: 1px solid var(--bs-black);
   }
   .post-btns-component {
     #image-input {
       font-size: 12px;
-      margin-bottom: 1rem;
-    }
-    .post-btn {
-      // margin-bottom: 1rem;
     }
   }
 
@@ -60,8 +53,8 @@ ul {
 
 .feed-container {
   width: 100%;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  // margin-bottom: 1rem;
+  // padding: 1rem;
   .feed-card {
     .posted-content {
       .name-and-text-container {

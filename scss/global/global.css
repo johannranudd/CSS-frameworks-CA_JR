@@ -10955,9 +10955,7 @@ ul {
 }
 
 .form-floating {
-  margin-top: 1rem;
   width: 100%;
-  margin-left: 1rem;
 }
 .form-floating .textarea {
   display: block;
@@ -10966,12 +10964,10 @@ ul {
   resize: both;
   min-height: 40px;
   line-height: 20px;
-  border-bottom: 1px solid black;
-  padding: 1rem;
+  border-bottom: 1px solid var(--bs-black);
 }
 .form-floating .post-btns-component #image-input {
   font-size: 12px;
-  margin-bottom: 1rem;
 }
 .form-floating .image-displayer {
   background: no-repeat;
@@ -10981,8 +10977,6 @@ ul {
 
 .feed-container {
   width: 100%;
-  margin-bottom: 1rem;
-  padding: 1rem;
 }
 .feed-container .feed-card .posted-content .name-and-text-container {
   margin-left: 1rem;

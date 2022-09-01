@@ -10927,9 +10927,7 @@ textarea.form-control-lg {
   height: 500px;
 }
 .posts-container .post-container {
-  background: #def;
-  padding: 1rem;
-  overflow: hidden;
+  border-bottom: 1px solid var(--bs-black);
 }
 .posts-container form {
   display: flex;
