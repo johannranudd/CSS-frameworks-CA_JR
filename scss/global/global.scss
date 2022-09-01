@@ -69,3 +69,13 @@ ul {
     }
   }
 }
+
+.search-btn {
+  display: block;
+  background: transparent;
+  border: none;
+  color: var(--bs-white);
+  :hover {
+    color: var(--bs-gray);
+  }
+}

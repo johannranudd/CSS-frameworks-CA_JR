@@ -13,14 +13,17 @@ function removeSidebarWidth() {
 removeSidebarWidth();
 
 // open search modal desktop
-const searchBtn = document.querySelector('.search-btn');
+const searchBtn = document.querySelectorAll('.search-btn');
 const searchModal = document.querySelector('.search-modal');
 const searchInput = document.querySelector('.search-input');
-searchBtn.addEventListener('click', () => {
-  searchModal.style.display = 'flex';
-  searchModal.style.justifyContent = 'center';
-  searchModal.style.alignItems = 'center';
-  searchInput.focus();
+
+searchBtn.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    searchModal.style.display = 'flex';
+    searchModal.style.justifyContent = 'center';
+    searchModal.style.alignItems = 'center';
+    searchInput.focus();
+  });
 });
 
 searchModal.addEventListener('click', (e) => {

@@ -20,25 +20,25 @@
     <title>CA johann Ranudd</title>
   </head>
   <body>
+    <!-- mobile bar -->
     <nav class="mobilebar">
       <div class="container">
-        <a href="#" class="list-item">
+        <a href="./" class="list-item">
           <i class="fa-solid fa-crosshairs"></i>
         </a>
-        <a href="#">
-          <i class="fa-solid fa-crosshairs"></i>
+        <a href="./login.html">
+          <i class="fa-solid fa-right-to-bracket"></i>
         </a>
-        <a href="#">
-          <i class="fa-solid fa-crosshairs"></i>
+        <a href="./profile.html">
+          <i class="fa-solid fa-user"></i>
         </a>
-        <a href="#">
-          <i class="fa-solid fa-crosshairs"></i>
-        </a>
+        <button class="search-btn p-0 list-item">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </div>
     </nav>
-    <div class="container sidebar-wrapper">
-      <!-- mobilebar -->
 
+    <div class="container sidebar-wrapper">
       <!-- sidebar -->
       <nav class="sidebar p-md-4">
         <a href="/index.html" class="logo mb-4 list-item">
@@ -53,7 +53,7 @@
           <i class="fa-solid fa-user"></i>
           <p>Profile</p>
         </a>
-        <button class="search-btn p-0 list-item">
+        <button class="search-btn p-0 list-item my-4">
           <i class="fa-solid fa-magnifying-glass"></i>
           <p>search</p>
         </button>
@@ -61,8 +61,13 @@
 
       <!-- modal -->
       <div class="search-modal">
-        <form>
-          <input class="search-input" type="search" placeholder="Search.." />
+        <form role="search">
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Search.."
+            aria-label="On this page"
+          />
           <button type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>

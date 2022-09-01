@@ -10984,4 +10984,14 @@ ul {
 .feed-container .feed-card .posted-image-container img {
   width: 70%;
   margin-left: 86px;
+}
+
+.search-btn {
+  display: block;
+  background: transparent;
+  border: none;
+  color: var(--bs-white);
+}
+.search-btn :hover {
+  color: var(--bs-gray);
 }/*# sourceMappingURL=global.css.map */
