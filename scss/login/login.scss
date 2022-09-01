@@ -1,0 +1,10 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+  margin: auto;
+  height: 100vh;
+}

@@ -20,44 +20,58 @@
     <title>CA johann Ranudd</title>
   </head>
   <body>
-    <div class="mobilebar">
-      <a href="#" class="list-item">
-        <i class="fa-solid fa-crosshairs"></i>
-      </a>
-      <a href="#">
-        <i class="fa-solid fa-crosshairs"></i>
-      </a>
-      <a href="#">
-        <i class="fa-solid fa-crosshairs"></i>
-      </a>
-      <a href="#">
-        <i class="fa-solid fa-crosshairs"></i>
-      </a>
-    </div>
-    <div class="container sidebar-wrapper">
-      <!-- mobilebar -->
-
-      <!-- sidebar -->
-      <div class="sidebar">
-        <button href="#" class="logo">
+    <!-- mobile bar -->
+    <nav class="mobilebar">
+      <div class="container">
+        <a href="./" class="list-item">
           <i class="fa-solid fa-crosshairs"></i>
+        </a>
+        <a href="./login.html">
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </a>
+        <a href="./profile.html">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <button class="search-btn p-0 list-item">
+          <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-        <a href="#" class="list-item">
+      </div>
+    </nav>
+
+    <div class="container sidebar-wrapper">
+      <!-- sidebar -->
+      <nav class="sidebar p-md-4">
+        <a href="/index.html" class="logo mb-4 list-item">
           <i class="fa-solid fa-crosshairs"></i>
-          <p>hello</p>
+          <p>Home</p>
         </a>
-        <a href="#" class="list-item">
-          <i class="fa-solid fa-crosshairs"></i>
-          <p>hello</p>
+        <a href="/login.html" class="list-item my-4">
+          <i class="fa-solid fa-right-to-bracket"></i>
+          <p>Login</p>
         </a>
-        <a href="#" class="list-item">
-          <i class="fa-solid fa-crosshairs"></i>
-          <p>hello</p>
+        <a href="/profile.html" class="list-item my-4">
+          <i class="fa-solid fa-user"></i>
+          <p>Profile</p>
         </a>
-        <a href="#" class="list-item">
-          <i class="fa-solid fa-crosshairs"></i>
-          <p>hello</p>
-        </a>
+        <button class="search-btn p-0 list-item my-4">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <p>search</p>
+        </button>
+      </nav>
+
+      <!-- modal -->
+      <div class="search-modal">
+        <form role="search">
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Search.."
+            aria-label="On this page"
+          />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
       </div>
 
       <!-- posts -->
@@ -65,41 +79,123 @@
 
       <div class="posts-container">
         <!-- form to submit feed -->
-        <div class="post-container">
-          <div class="home-component">
+        <div class="post-container py-4 mx-4">
+          <!-- <div class="home-component">
             <h4>Home</h4>
-          </div>
+          </div> -->
           <form>
-            <!-- !<img src="" alt="" class=""> -->
-            <div class="form-floating">
-              <textarea
-                class="form-control textarea-for-posting"
-                placeholder="Leave a comment here"
-                id="floatingTextarea"
-              ></textarea>
-              <label for="floatingTextarea">Post something</label>
+            <img
+              src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png"
+              alt="profile image"
+              class="img-fluid profile-image"
+            />
+            <div class="form-floating mx-2">
+              <p>
+                <span
+                  class="textarea p-4"
+                  role="textbox"
+                  contenteditable
+                ></span>
+              </p>
+              <div class="image-displayer"></div>
+              <div
+                class="d-flex flex-column align-items-start post-btns-component"
+              >
+                <input
+                  type="file"
+                  id="image-input"
+                  class="mb-3"
+                  accept="image/png, image/jpg, image/WEBP"
+                />
+                <button class="btn btn-primary post-btn">Submit</button>
+              </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
-        <!-- icons and add image icons etc-->
         <!-- feed content -->
-        <div class="feed-container">
-          <div class="feed-card">feed content</div>
+        <div class="feed-container p-4 mb-4">
+          <div class="feed-card">
+            <div class="posted-content d-flex">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png"
+                alt="profile image"
+                class="img-fluid profile-image"
+              />
+
+              <!-- name and text -->
+              <div class="name-and-text-container">
+                <h4>Profile Name</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <!-- posted image -->
+            <div class="posted-image-container">
+              <img
+                src="https://thelandscapephotoguy.com/wp-content/uploads/2019/01/landscape%20new%20zealand%20S-shape.jpg"
+                alt="posted image"
+                class="posted-image"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- feed content -->
+        <div class="feed-container p-4 mb-4">
+          <div class="feed-card">
+            <div class="posted-content d-flex">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png"
+                alt="profile image"
+                class="img-fluid profile-image"
+              />
+
+              <!-- name and text -->
+              <div class="name-and-text-container">
+                <h4>Profile Name</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <!-- posted image -->
+            <div class="posted-image-container">
+              <img
+                src="https://thelandscapephotoguy.com/wp-content/uploads/2019/01/landscape%20new%20zealand%20S-shape.jpg"
+                alt="posted image"
+                class="posted-image"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- feed content -->
+        <div class="feed-container p-4 mb-4">
+          <div class="feed-card">
+            <div class="posted-content d-flex">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png"
+                alt="profile image"
+                class="img-fluid profile-image"
+              />
+
+              <!-- name and text -->
+              <div class="name-and-text-container">
+                <h4>Profile Name</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <!-- posted image -->
+            <div class="posted-image-container">
+              <img
+                src="https://thelandscapephotoguy.com/wp-content/uploads/2019/01/landscape%20new%20zealand%20S-shape.jpg"
+                alt="posted image"
+                class="posted-image"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- end container -->
-    <h2>hello</h2>
-    <h2>hello</h2>
-    <h2>hello</h2>
-    <h2>hello</h2>
-    <h2>hello</h2>
-    <h2>hello</h2>
-    <h2>hello</h2>
-    <!-- hero content -->
 
     <!-- SCRIPTS -->
+    <script src="./js/index.js"></script>
     <script src="./js/sidebar.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
