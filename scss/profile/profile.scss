@@ -1,17 +1,39 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-.profile-container {
-  .profile-info-container {
+.posts-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 100%;
+  .profile-container {
+    background: #fed;
+    .banner-image {
+      background: red;
+      width: 100%;
+      height: 150px;
+      background-image: url('https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg');
+      // background: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+    .profile-info-container {
+      transform: translateY(-35px);
+      .profile-text {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .post-to-wall-container {
+    }
+    .wall-container {
+    }
   }
-  .post-to-wall-container {
-  }
-  .posts-container {
-  }
-}
 
-.contacts-container {
-  .list-of-contacts {
-    li {
+  .contacts-container {
+    background: #def;
+    .list-of-contacts {
+      width: 100%;
+      .individual-contact {
+      }
     }
   }
 }

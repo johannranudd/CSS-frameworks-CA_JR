@@ -8,63 +8,9 @@
     padding: 1rem;
     overflow: hidden;
   }
-  .feed-container {
-    background: #fed;
-  }
   .home-component {
   }
   form {
     display: flex;
-
-    .form-floating {
-      margin-top: 1rem;
-      width: 100%;
-      margin-left: 1rem;
-      .textarea {
-        display: block;
-        width: 100%;
-        overflow: hidden;
-        resize: both;
-        min-height: 40px;
-        line-height: 20px;
-        max-width: 500px;
-        border-bottom: 1px solid black;
-        padding: 1rem;
-      }
-      .post-btns-component {
-        #image-input {
-          font-size: 12px;
-          margin-bottom: 1rem;
-        }
-        .post-btn {
-          // margin-bottom: 1rem;
-        }
-      }
-
-      .image-displayer {
-        background: no-repeat;
-        background-position: center center;
-        background-size: cover;
-      }
-    }
-  }
-}
-
-.feed-container {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  .feed-card {
-    .posted-content {
-      .name-and-text-container {
-        margin-left: 1rem;
-      }
-    }
-    .posted-image-container {
-      img {
-        width: 70%;
-        // max-width: 400px;
-        margin-left: 86px;
-      }
-    }
   }
 }
