@@ -4,15 +4,20 @@
 .mobilebar {
   position: fixed;
   bottom: 0;
-  width: 100%;
-  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3rem;
   background: var(--bs-black);
-  color: var(--bs-white);
+  width: 100%;
+  height: 50px;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 0 3rem;
 
+    color: var(--bs-white);
+  }
   @media (min-width: 768px) {
     display: none;
   }
