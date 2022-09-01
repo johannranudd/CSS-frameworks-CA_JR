@@ -10950,6 +10950,7 @@ textarea.form-control-lg {
   min-height: 40px;
   line-height: 20px;
   max-width: 500px;
+  border-bottom: 1px solid black;
 }
 .posts-container form .form-floating .post-btns-component #image-input {
   font-size: 12px;

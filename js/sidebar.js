@@ -31,6 +31,20 @@ imgInput.addEventListener('change', (e) => {
   imgDisplayer.style.width = '300px';
 });
 
+// textarea
+const textarea = document.querySelector('.textarea');
+textarea.innerHTML = 'Post something';
+textarea.addEventListener('focus', () => {
+  if (textarea.innerHTML === 'Post something') {
+    textarea.innerHTML = '';
+  }
+});
+textarea.addEventListener('blur', () => {
+  if (textarea.innerHTML === '') {
+    textarea.innerHTML = 'Post something';
+  }
+});
+
 //
 //
 //
