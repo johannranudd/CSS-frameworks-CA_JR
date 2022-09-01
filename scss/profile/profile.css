@@ -10927,11 +10927,8 @@ textarea.form-control-lg {
   grid-template-columns: 70% 30%;
   width: 100%;
 }
-.posts-container .profile-container {
-  background: #fed;
-}
 .posts-container .profile-container .banner-image {
-  background: red;
+  background: var(--bs-gray);
   width: 100%;
   height: 150px;
   background-image: url("https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg");

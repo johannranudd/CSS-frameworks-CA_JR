@@ -31,9 +31,10 @@ ul {
   width: 100%;
   .textarea {
     display: block;
-    width: 90%;
+    width: 70%;
+    max-width: 700px;
     overflow: hidden;
-    resize: both;
+    resize: vertical;
     min-height: 40px;
     line-height: 20px;
     border-bottom: 1px solid var(--bs-black);
