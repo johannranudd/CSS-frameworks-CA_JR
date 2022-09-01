@@ -1,5 +1,17 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 .profile-container {
-  background: red;
+  .profile-info-container {
+  }
+  .post-to-wall-container {
+  }
+  .posts-container {
+  }
+}
+
+.contacts-container {
+  .list-of-contacts {
+    li {
+    }
+  }
 }
