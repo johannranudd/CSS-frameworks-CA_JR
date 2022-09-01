@@ -10959,7 +10959,7 @@ ul {
 .form-floating .textarea {
   display: block;
   width: 70%;
-  max-width: 700px;
+  max-width: 450px;
   overflow: hidden;
   resize: vertical;
   min-height: 40px;
