@@ -49,20 +49,44 @@
           }
         }
       }
-      form {
-        button {
-          background: transparent;
-          border: none;
-          color: var(--bs-white);
-          :hover {
-            color: var(--bs-gray);
-          }
+      .search-btn {
+        display: block;
+        background: transparent;
+        border: none;
+        color: var(--bs-white);
+        :hover {
+          color: var(--bs-gray);
         }
       }
     }
     @media (min-width: 1298px) {
       width: 18rem;
       align-items: flex-start;
+    }
+  }
+
+  .search-modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    color: var(--bs-white);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    form {
+      font-size: 1.5rem;
+      input {
+      }
+      button {
+        color: var(--bs-white);
+        background: transparent;
+        border: none;
+      }
     }
   }
 }

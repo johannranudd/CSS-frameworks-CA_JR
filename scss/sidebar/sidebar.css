@@ -10978,12 +10978,13 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 768px) {
-  .sidebar-wrapper .sidebar form button {
+  .sidebar-wrapper .sidebar .search-btn {
+    display: block;
     background: transparent;
     border: none;
     color: var(--bs-white);
   }
-  .sidebar-wrapper .sidebar form button :hover {
+  .sidebar-wrapper .sidebar .search-btn :hover {
     color: var(--bs-gray);
   }
 }
@@ -10992,4 +10993,23 @@ textarea.form-control-lg {
     width: 18rem;
     align-items: flex-start;
   }
+}
+.sidebar-wrapper .search-modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  color: var(--bs-white);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+.sidebar-wrapper .search-modal form {
+  font-size: 1.5rem;
+}
+.sidebar-wrapper .search-modal form button {
+  color: var(--bs-white);
+  background: transparent;
+  border: none;
 }/*# sourceMappingURL=sidebar.css.map */

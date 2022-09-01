@@ -41,8 +41,9 @@
 
       <!-- sidebar -->
       <nav class="sidebar p-md-4">
-        <a href="/index.html" class="logo mb-4">
+        <a href="/index.html" class="logo mb-4 list-item">
           <i class="fa-solid fa-crosshairs"></i>
+          <p>Home</p>
         </a>
         <a href="/login.html" class="list-item my-4">
           <i class="fa-solid fa-right-to-bracket"></i>
@@ -52,13 +53,21 @@
           <i class="fa-solid fa-user"></i>
           <p>Profile</p>
         </a>
-        <form class="d-flex align-items-center">
-          <input type="search" placeholder="Search.." />
+        <button class="search-btn p-0 list-item">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <p>search</p>
+        </button>
+      </nav>
+
+      <!-- modal -->
+      <div class="search-modal">
+        <form>
+          <input class="search-input" type="search" placeholder="Search.." />
           <button type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
-      </nav>
+      </div>
 
       <!-- posts -->
       <!-- posts -->

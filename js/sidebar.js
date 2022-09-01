@@ -12,42 +12,19 @@ function removeSidebarWidth() {
 }
 removeSidebarWidth();
 
-//
-//
-//
-//
-//
-//
-//
-//
+// open search modal desktop
+const searchBtn = document.querySelector('.search-btn');
+const searchModal = document.querySelector('.search-modal');
+const searchInput = document.querySelector('.search-input');
+searchBtn.addEventListener('click', () => {
+  searchModal.style.display = 'flex';
+  searchModal.style.justifyContent = 'center';
+  searchModal.style.alignItems = 'center';
+  searchInput.focus();
+});
 
-// let uploadedImage = '';
-// imgInput.addEventListener('change', () => {
-//   // console.log(imgInput.value);
-//   const reader = new FileReader();
-//   reader.addEventListener('load', () => {
-//     uploadedImage = reader.result;
-//     imgDisplayer.style.backgroundImage = `url(${uploadedImage})`;
-//   });
-//   reader.readAsDataURL(this.files[0]);
-// });
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-// async function openFile() {
-//   let [fileHandle] = await window.showOpenFilePicker();
-//   let fileData = await fileHandle.getFile();
-//   console.log(fileData);
-// }
-
-// imgBtn.addEventListener('click', () => {
-//   openFile();
-// });
+searchModal.addEventListener('click', (e) => {
+  if (e.target === searchModal) {
+    searchModal.style.display = 'none';
+  }
+});
