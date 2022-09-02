@@ -11010,6 +11010,10 @@ ul {
   margin: auto;
   height: 100vh;
 }
+.login-form .warning {
+  background-color: var(--bs-danger);
+  padding: 0.5rem;
+}
 
 .post-container-profile {
   display: grid;

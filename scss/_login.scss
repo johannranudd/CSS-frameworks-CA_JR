@@ -8,6 +8,7 @@
   margin: auto;
   height: 100vh;
   .warning {
-    background-color: red;
+    background-color: var(--bs-danger);
+    padding: 0.5rem;
   }
 }
