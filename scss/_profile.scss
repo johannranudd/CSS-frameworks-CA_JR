@@ -9,7 +9,7 @@
       background: var(--bs-gray);
       width: 100%;
       height: 150px;
-      background-image: url('https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg');
+      background-image: url('../images/6.webp');
       // background: no-repeat;
       background-position: center center;
       background-size: cover;
@@ -17,8 +17,10 @@
     .profile-info-container {
       transform: translateY(-35px);
       .profile-text {
-        display: flex;
-        justify-content: space-between;
+        @media (min-width: 600px) {
+          display: flex;
+          justify-content: space-between;
+        }
       }
     }
     .post-to-wall-container {
