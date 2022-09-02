@@ -10,5 +10,6 @@ loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     alert.innerHTML =
       'Email address must be valid and password must contain at least 6 characters';
+    alert.style.padding = '0.5rem';
   }
 });

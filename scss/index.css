@@ -11012,7 +11012,6 @@ ul {
 }
 .login-form .warning {
   background-color: var(--bs-danger);
-  padding: 0.5rem;
 }
 
 .post-container-profile {
